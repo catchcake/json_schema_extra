@@ -58,7 +58,7 @@ defmodule JSONSchemaExtra.MixProject do
         "Jindrich K. Smitka <smitka.j@gmail.com>",
         "Daniel Bultas <comm3net@gmail.com>"
       ],
-      licenses: ["Private"],
+      licenses: ["BSD-3-Clause"],
       links: %{
         "GitHub" => "https://github.com/catchcake/json_schema_extra"
       }
