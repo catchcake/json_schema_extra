@@ -39,14 +39,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-
 
-      - uses: actions/cache@v1
-        id: plts-cache
-        with:
-          path: priv/plts
-          key: ${{ runner.os }}-erlef-dialyzer-${{ env.OTP_VERSION }}-${{ env.ELIXIR_VERSION }}-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
-          restore-keys: |
-            ${{ runner.os }}-erlef-dialyzer-
-
       - name: install dependencies
         run: mix deps.get
 
